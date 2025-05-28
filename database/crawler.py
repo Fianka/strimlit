@@ -36,7 +36,7 @@ for a in soup.find_all('a', href=True):
 links = list(set(links))
 
 # Setup MongoDB
-client = MongoClient('mongodb+srv://fianka:finn@cluster0.sbuemvv.mongodb.net/flo_helath?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://fianka:finn@cluster0.sbuemvv.mongodb.net/flo_health?retryWrites=true&w=majority')
 db = client.flo_health
 collection = db.articles
 
